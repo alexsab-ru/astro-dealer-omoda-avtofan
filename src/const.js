@@ -18,26 +18,42 @@ const children = Object.keys(groupModelsByBrand).reduce((acc, key) => {
 	return acc;
 }, {});
 export const LINKS_MENU = [
-	{url: 'cars/', name: 'Авто в наличии'},
 	// {url: 'catalog/', name: 'Каталог'},
 	// {url: 'used_cars/', name: 'Авто с пробегом'},
+	{url: 'cars/', name: 'Авто в наличии'},
 	{ 
 		url: 'models/', 
 		name: 'Модели',
 		children
 	},
+	{url: '#', name: 'Покупателям', children: [
+		{url: 'special-offers/', name: 'Спецпредложения'},
+		{url: 'cars/', name: 'Авто в наличии'},
+		{url: 'test-drive/', name: 'Запись на тест-драйв'},
+		{url: 'customers-credit/', name: 'Кредитование и страхование'},
+	]},
+	{url: '#', name: 'Владельцам', children: [
+		{url: 'special-offers/', name: 'Спецпредложения'},
+		{url: 'service-request/', name: 'Запись на сервис'},
+		{url: '#', name: 'Кузовной ремонт'},
+		{url: '#', name: 'Поддержка'},
+		{url: '#', name: 'OMODA Club'},
+		{url: '#', name: 'Мобильное приложение O&J'},
+	]},
+	{url: '#', name: 'Мир OMODA', children: [
+		{url: '#', name: 'О бренде'},
+		{url: 'news/', name: 'Новости'},
+		{url: '#', name: 'Онлайн сервисы'},
+		{url: 'contacts/', name: 'Контакты'},
+	]},
 	// {url: 'trade-in/', name: 'Оценка автомобиля'},
-	{url: 'special-offers/', name: 'Спецпредложения'},
-	{url: 'news/', name: 'Новости'},
-	{url: 'test-drive/', name: 'Запись на тест-драйв'},
-	{url: 'service-request/', name: 'Запись на сервис'},
 	{url: '#services', name: 'Услуги'},
-	{url: 'contacts/', name: 'Контакты'},
 ];
 
 // Коллекции
 export const COLLECTIONS = [
 	{name: 'special-offers', title: 'Спецпредложения'},
+	{name: 'customers-credit', title: 'Кредитование и страхование'},
 	{name: 'news', title: 'Новости'},
 ];
 
