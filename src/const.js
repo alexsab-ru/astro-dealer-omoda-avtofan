@@ -26,24 +26,22 @@ export const LINKS_MENU = [
 		name: 'Модели',
 		children
 	},
-	{url: '#', name: 'Покупателям', children: [
+	{url: 'javascript:void(0)', name: 'Покупателям', children: [
 		{url: 'special-offers/', name: 'Спецпредложения'},
 		{url: 'cars/', name: 'Авто в наличии'},
 		{url: 'test-drive/', name: 'Запись на тест-драйв'},
 		{url: 'customers-credit/', name: 'Кредитование и страхование'},
 	]},
-	{url: '#', name: 'Владельцам', children: [
+	{url: 'javascript:void(0)', name: 'Владельцам', children: [
 		{url: 'special-offers/', name: 'Спецпредложения'},
 		{url: 'service-request/', name: 'Запись на сервис'},
-		{url: '#', name: 'Кузовной ремонт'},
+		{url: 'kuzovnoi-remont/', name: 'Кузовной ремонт'},
 		{url: 'owners-support/', name: 'Поддержка'},
-		{url: '#', name: 'OMODA Club'},
-		{url: '#', name: 'Мобильное приложение O&J'},
+		{url: 'o-j-app/', name: 'Мобильное приложение O&J'},
 	]},
-	{url: '#', name: 'Мир OMODA', children: [
-		{url: '#', name: 'О бренде'},
+	{url: 'javascript:void(0)', name: 'Мир OMODA', children: [
+		{url: 'about', name: 'О бренде'},
 		{url: 'news/', name: 'Новости'},
-		{url: '#', name: 'Онлайн сервисы'},
 		{url: 'contacts/', name: 'Контакты'},
 	]},
 	// {url: 'trade-in/', name: 'Оценка автомобиля'},
