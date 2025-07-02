@@ -36,7 +36,7 @@ export const LINKS_MENU = [
 		{url: 'special-offers/', name: 'Спецпредложения'},
 		{url: 'service-request/', name: 'Запись на сервис'},
 		{url: '#', name: 'Кузовной ремонт'},
-		{url: '#', name: 'Поддержка'},
+		{url: 'owners-support/', name: 'Поддержка'},
 		{url: '#', name: 'OMODA Club'},
 		{url: '#', name: 'Мобильное приложение O&J'},
 	]},
@@ -54,6 +54,7 @@ export const LINKS_MENU = [
 export const COLLECTIONS = [
 	{name: 'special-offers', title: 'Спецпредложения'},
 	{name: 'customers-credit', title: 'Кредитование и страхование'},
+	{name: 'owners-support', title: 'Поддержка'},
 	{name: 'news', title: 'Новости'},
 ];
 
