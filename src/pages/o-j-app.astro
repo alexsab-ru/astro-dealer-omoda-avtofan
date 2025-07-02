@@ -1,0 +1,85 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Banner from '@/components/Banner/Banner.astro';
+import InfoSectionWithImage from '@/components/InfoSectionWithImage/InfoSectionWithImage.astro';
+import settings from '@/data/settings.json';
+const { brand, legal_city_where } = settings;
+const banner = [
+	{
+		"show": true,
+		"type": "image",
+		"imageUrl": "https://cdn.alexsab.ru/pages/omoda/o-j-app/banner_desktop.webp",
+		"mobileImageUrl": "https://cdn.alexsab.ru/pages/omoda/o-j-app/banner_mobile.webp",
+		"title": "<h1 class=\"pt-[50%] md:pt-[30%] lg:pt-0 xs:text-base text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal\">Мобильное приложение O&J:<br class=\"xs:hidden\"/> личный кабинет клиента и чат<br class=\"xs:hidden\"/> с владельцами</h1>",
+        "descr": "<div class=\"flex items-center flex-wrap gap-4 mt-10\"><a href=\"https://apps.apple.com/ru/app/my-omoda/id6444413855\" class=\"btn white text-sm sm:text-base\" target=\"_blank\">Скачать в App Store</a><a href=\"https://play.google.com/store/apps/details?id=com.ru.chery.od.myOmoda\" class=\"btn white text-sm sm:text-base\" target=\"_blank\">Скачать в Google Play</a></div>",
+	}
+];
+---
+
+<Layout title="Мобильное приложение O&J автоклуб" description="Добро пожаловать в My OMODA! Оптимизируйте управление вашим автомобилем через мобильное приложение. Записывайтесь на сервис, проверяйте статус гарантии и общайтесь с другими владельцами. Получайте бонусы и покупайте аксессуары в онлайн-магазине." image="https://cdn.alexsab.ru/pages/omoda/o-j-app/banner_desktop.webp">
+	<Banner banners={banner} />
+	<section class="!pt-0 -my-14">
+		<h2 class="sr-only !absolute">Информация о мобильном приложении</h2>
+		<div class="container">
+			<InfoSectionWithImage image={{
+				desktop: 'https://cdn.alexsab.ru/pages/omoda/o-j-app/1.webp',
+			}}>
+				<h3 class="font-bold mb-8">Мой гараж</h3>
+				<div class="space-y-5">
+					<p>В разделе «Мой гараж» вы можете записаться на сервис или техническое обслуживание, проверить статус гарантии и увидеть историю обслуживания. Также в разделе есть онлайн-руководство для вашего автомобиля.</p>
+					<p>Для доступа к данному разделу вам необходимо добавить ваш автомобиль в мобильное приложение. Чтобы добавить автомобиль используйте логин и пароль, которые предоставил вам дилер. Или пройдите регистрацию самостоятельно. Для этого вам потребуются заполнить поля: VIN, фамилия, имя, отчество, телефон, электронная почта, фотографии СТС.</p>
+				</div>
+			</InfoSectionWithImage>
+			<InfoSectionWithImage image={{
+				desktop: 'https://cdn.alexsab.ru/pages/omoda/o-j-app/2.webp',
+			}}>
+				<h3 class="font-bold mb-8">Community</h3>
+				<div class="space-y-5">
+					<p>Хотите задать вопрос об автомобиле, узнать новости бренда или участвовать в конкурсах от бренда? Переходите в раздел Community. Здесь вы можете пообщаться с владельцами OMODA & JAECOO, опубликовать фотографии автомобиля, рассказать о своих поездках. За любую активность в нашем Community вы получаете баллы, которые можно потратить на фирменные аксессуары и мерч в онлайн-магазине OMODA & JAECOO.</p>
+					<p>Кстати, не обязательно быть владельцем автомобиля, чтобы пользоваться этим разделом или копить и списывать баллы.</p>
+				</div>
+			</InfoSectionWithImage>
+			<InfoSectionWithImage image={{
+				desktop: 'https://cdn.alexsab.ru/pages/omoda/o-j-app/3.webp',
+			}}>
+				<h3 class="font-bold mb-8">Программа лояльности</h3>
+				<div class="space-y-5">
+					<p>В мобильном приложении O&J есть программа лояльности, которая позволяет зарабатывать и тратить бонусные баллы за активности внутри разделов и привлечение новых клиентов.</p>
+					<p>Делитесь QR кодами на автомобили, публикуйте посты в Community и получите статус «любимого клиента OMODA & JAECOO».</p>
+					<p>Тогда вы получите доступ к лимитированным коллекциям, закрытым распродажам и специальным акциям.</p>
+				</div>
+			</InfoSectionWithImage>
+			<InfoSectionWithImage image={{
+				desktop: 'https://cdn.alexsab.ru/pages/omoda/o-j-app/4.webp',
+			}}>
+				<h3 class="font-bold mb-8">Онлайн-магазин аксессуаров и онлайн-шоурум новых автомобилей</h3>
+				<div class="space-y-5">
+					<p>В онлайн-магазине вы сможете найти оригинальные аксессуары для автомобилей и товары бренда OMODA & JAECOO: худи, свитшоты и даже лонгборд. Именно в онлайн-магазине OMODA & JAECOO можно потратить часть своих накопленных баллов.</p>
+					<p>В онлайн-шоуруме новых автомобилей вы сможете забронировать автомобиль на выгодных условиях и по фиксированной цене. Для оформления бронирования не нужно тратить время на поездки в дилерские центры и поиск лучших предложений. Достаточно открыть приложение O&J, перейти в раздел «Купить», выбрать понравившийся автомобиль и удобный для вас дилерский центр OMODA & JAECOO для оформления доставки.</p>
+				</div>
+			</InfoSectionWithImage>
+		</div>
+	</section>
+	<section class="bg-gray-100">
+		<div class="container">
+			<h2 class="mb-10 text-center">Workspace Digital Awards 2024</h2>
+			<div class="space-y-5 text-center">
+				<p>Теперь O&J по праву носит титул лучшего мобильного приложения в категории Авто/Мото по версии жюри Workspace Digital Awards 2024.</p>
+				<p>O&J – это целая экосистема, которая позволяет: забронировать автомобиль онлайн, управлять функциями своего авто с телефона, всегда держать под рукой карту помощи на дорогах и записываться на ТО к дилерам, а также пополнять гардероб эксклюзивным мерчом OMODA & JAECOO.</p>
+				<p>Приложение доступно в AppStore, Google Play и AppGallery. За два года O&J скачали 75 476 пользователей, которые оставили более 2 000 отзывов и высоко оценивали функционал “эппки” – средняя оценка в AppStore и Google Play составляет 8,18. За удобством и широким функционалом стоит долгая и кропотливая работа большой команды.</p>
+			</div>
+			<div class="flex justify-center mt-10">
+				<img src="https://cdn.alexsab.ru/pages/omoda/o-j-app/workspace_1.webp" class="max-w-full" alt="Workspace Digital Awards" />
+			</div>
+		</div>
+	</section>
+	<section class="bg-gray-50">
+		<div class="container">
+			<h2 class="mb-10 text-center">Скачайте приложение прямо сейчас</h2>
+			<div class="flex justify-center flex-wrap gap-5">                                    
+				<a href="https://apps.apple.com/ru/app/my-omoda/id6444413855" target="_blank" rel="nofollow"><img src="https://cdn.alexsab.ru/pages/omoda/o-j-app/AppStore_qr.jpg" alt="Перейти" /></a>													
+				<a href="https://play.google.com/store/apps/details?id=com.ru.chery.od.myOmoda&amp;hl=ru&amp;pli=1" target="_blank" rel="nofollow"><img src="https://cdn.alexsab.ru/pages/omoda/o-j-app/Google_app_qr.jpg" alt="Перейти" /></a>
+			</div>
+		</div>
+	</section>
+</Layout>
