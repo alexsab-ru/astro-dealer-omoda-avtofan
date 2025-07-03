@@ -40,7 +40,7 @@ export const LINKS_MENU = [
 		{url: 'o-j-app/', name: 'Мобильное приложение O&J'},
 	]},
 	{url: 'javascript:void(0)', name: 'Мир OMODA', children: [
-		{url: 'about', name: 'О бренде'},
+		{url: 'about/', name: 'О бренде'},
 		{url: 'news/', name: 'Новости'},
 		{url: 'contacts/', name: 'Контакты'},
 	]},
