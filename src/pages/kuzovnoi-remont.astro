@@ -1,0 +1,45 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Banner from '@/components/Banner/Banner.astro';
+import AdvantagesList from '@/components/Advantages/List.astro';
+import Form from '@/components/FeedbackForm/Form.astro';
+import settings from '@/data/settings.json';
+const { brand, legal_city_where } = settings;
+const banner = [
+	{
+		"show": true,
+		"type": "image",
+		"view": "scroll-link",
+		"imageUrl": "https://cdn.alexsab.ru/pages/omoda/kuzovnoi-remont/banner_desktop.webp",
+		"mobileImageUrl": "https://cdn.alexsab.ru/pages/omoda/kuzovnoi-remont/banner_mobile.webp",
+		"title": "<h1 class=\"pt-[50%] md:pt-[30%] lg:pt-0 text-xl md:text-2xl lg:text-3xl xl:text-5xl font-normal\">Кузовной ремонт</h1>",
+        "descr": "Дилерский центр является официальным сервисом OMODA<br/> и гарантирует высокое качество всех предоставляемых услуг",
+		"btn": "Записаться на ремонт",
+		"btnUrl": "#online-zapis",
+	}
+];
+const advantages = [
+	{iconName: 'club', title: 'Квалифицированные специалисты', text: 'В сервисе работают опытные мастера, которые регулярно повышают свою квалификацию и следят за новыми технологиями в области кузовного ремонта.', iconClass: 'text-[#A6B7BE]'},
+	{iconName: 'spareparts', title: 'Современное оборудование', text: 'Для выполнения работ используется профессиональное оборудование и качественные материалы, что обеспечивает безупречный результат ремонта.', iconClass: 'text-[#A6B7BE]'},
+	{iconName: 'reward', title: 'Гарантия на работы', text: 'На все выполненные работы предоставляется гарантия, подтверждающая высокий уровень сервиса.', iconClass: 'text-[#A6B7BE]'},
+];
+---
+
+<Layout title="Кузовной ремонт" description="Дилерский центр является официальным сервисом OMODA и гарантирует высокое качество всех предоставляемых услуг" image="https://cdn.alexsab.ru/pages/omoda/kuzovnoi-remont/banner_desktop.webp">
+	<Banner banners={banner} />
+	<section>
+		<div class="container">
+			<h2 class="mb-10 text-center">Преимущества официального дилера</h2>
+			<AdvantagesList items={ advantages } classes="grid sm:grid-cols-3 gap-5 lg:gap-10 text-center mb-10 md:mb-20 mt-10" />
+		</div>
+	</section>
+	<section class="bg-gray-100" id="online-zapis">
+		<div class="container">
+			<div class="text-center mb-10 space-y-5">
+				<h2>Кузовной ремонт OMODA</h2>
+				<p>Закажите бесплатный обратный звонок и мы свяжемся с вами в ближайшее время!</p>
+			</div>
+			<Form dataFormName="Запись на кузовной ремонт" />
+		</div>
+	</section>
+</Layout>
