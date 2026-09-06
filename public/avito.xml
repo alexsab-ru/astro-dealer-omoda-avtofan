@@ -2042,6 +2042,8 @@
     <Make>OMODA</Make>
     <Model>C5</Model>
     <Transmission>Робот</Transmission>
+    <EngineSize>1.5</EngineSize>
+    <Year>2026</Year>
     <DriveType>Передний</DriveType>
     <WheelType>Левый</WheelType>
     <VIN>EDEJB31BXTE024987</VIN>
@@ -2130,6 +2132,8 @@
     <Make>OMODA</Make>
     <Model>C7</Model>
     <Transmission>Робот</Transmission>
+    <EngineSize>1.6</EngineSize>
+    <Year>2026</Year>
     <DriveType>Полный</DriveType>
     <WheelType>Левый</WheelType>
     <VIN>EDEKD32B8TE008764</VIN>
